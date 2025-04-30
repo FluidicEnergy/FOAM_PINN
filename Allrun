@@ -1,0 +1,41 @@
+#!/bin/bash
+# Allrun
+# 실행 전에: chmod +x Allrun
+
+# Stop immediately if any command fails
+set -e
+
+# --------------------------------
+# 1. case 디렉토리 지정
+# --------------------------------
+CASE_DIR="$PWD/case"   # 예: case가 extractFields, extractPatchPoints 상위에 있을 때
+MAIN_DIR="$PWD"
+
+# 시간 리스트
+TIMES=("0.5" "15.5" "30.5")
+
+# --------------------------------
+# 2. extractPatchPoints 실행
+# --------------------------------
+echo "Running extractPatchPoints..."
+cd extractPatchPoints
+wmake > /dev/null
+./extractPatchPoints -case "$CASE_DIR"
+
+# --------------------------------
+# 3. extractFields 실행 (각 시간별로)
+# --------------------------------
+echo "Running extractFields..."
+cd ../extractFields
+wmake > /dev/null
+
+for TIME in "${TIMES[@]}"
+do
+    echo "Extracting fields at time $TIME..."
+    ./extractFields -case "$CASE_DIR" -time "$TIME"
+done
+
+# --------------------------------
+# 4. 완료 메시지
+# --------------------------------
+echo "All extractions complete."
