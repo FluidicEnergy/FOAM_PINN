@@ -1,0 +1,248 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2412                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : _8dbc61e11c-20241220 OPENFOAM=2412 version=v2412
+Arch   : "LSB;label=32;scalar=64"
+Exec   : blockMesh
+Date   : Apr 30 2025
+Time   : 04:26:55
+Host   : Navier
+PID    : 626657
+I/O    : uncollated
+Case   : /home/navier/Codes/PINN/FOAM_PINN/case
+nProcs : 1
+trapFpe: Floating point exception trapping enabled (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 5, maxFileModificationPolls 20)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Creating block mesh from "system/blockMeshDict"
+Using #codeStream at line 26 in file "system/blockMeshDict"
+Using #codeStream with "/home/navier/Codes/PINN/FOAM_PINN/case/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_123f85c96e12709e42dbeb6ffae52b95dd518b15.so"
+Could not load "/home/navier/Codes/PINN/FOAM_PINN/case/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_123f85c96e12709e42dbeb6ffae52b95dd518b15.so"
+/home/navier/Codes/PINN/FOAM_PINN/case/dynamicCode/platforms/linux64GccDPInt32Opt/lib/libcodeStream_123f85c96e12709e42dbeb6ffae52b95dd518b15.so: cannot open shared object file: No such file or directory
+Creating new library in "dynamicCode/_123f85c96e12709e42dbeb6ffae52b95dd518b15/platforms/linux64GccDPInt32Opt/lib/libcodeStream_123f85c96e12709e42dbeb6ffae52b95dd518b15.so"
+Invoking wmake libso /home/navier/Codes/PINN/FOAM_PINN/case/dynamicCode/_123f85c96e12709e42dbeb6ffae52b95dd518b15
+wmake libso /home/navier/Codes/PINN/FOAM_PINN/case/dynamicCode/_123f85c96e12709e42dbeb6ffae52b95dd518b15
+    ln: ./lnInclude
+    dep: codeStreamTemplate.C
+    Ctoo: codeStreamTemplate.C
+    link: /home/navier/Codes/PINN/FOAM_PINN/case/dynamicCode/_123f85c96e12709e42dbeb6ffae52b95dd518b15/../platforms/linux64GccDPInt32Opt/lib/libcodeStream_123f85c96e12709e42dbeb6ffae52b95dd518b15.so
+--> FOAM IOWarning :
+    Found [v1012] 'convertToMeters' entry instead of 'scale' in dictionary "system/blockMeshDict"
+
+    This keyword is 168 months old.
+
+Creating block edges
+No non-planar block faces defined
+Creating topology blocks
+
+Creating topology patches - from boundary section
+
+Creating block mesh topology
+
+Check topology
+
+	Basic statistics
+		Number of internal faces : 48
+		Number of boundary faces : 96
+		Number of defined boundary faces : 96
+		Number of undefined boundary faces : 0
+	Checking patch -> block consistency
+
+Creating block offsets
+Creating merge list (topological search)...
+
+Creating polyMesh from blockMesh
+Creating patches
+Creating cells
+Creating points with scale (1 1 1)
+    Block 0 cell size :
+        i : 0.147736 .. 0.0507298
+        j : 0.0505076 .. 0.0505076
+        k : 1 .. 1
+
+    Block 1 cell size :
+        i : 0.05 .. 0.05
+        j : 0.0505076 .. 0.0505076
+        k : 1 .. 1
+
+    Block 2 cell size :
+        i : 0.05 .. 0.05
+        j : 0.0560704 .. 0.0560704
+        k : 1 .. 1
+
+    Block 3 cell size :
+        i : 0.0502808 .. 0.480684
+        j : 0.0505076 .. 0.0505076
+        k : 1 .. 1
+
+    Block 4 cell size :
+        i : 0.0502808 .. 0.480684
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 5 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 6 cell size :
+        i : 0.0560704 .. 0.0560704
+        j : 0.05 .. 0.05
+        k : 1 .. 1
+
+    Block 7 cell size :
+        i : 0.0560704 .. 0.0560704
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 8 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 9 cell size :
+        i : 0.147736 .. 0.0507298
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 10 cell size :
+        i : 0.147736 .. 0.0507298
+        j : 0.0507525 .. 0.14769
+        k : 1 .. 1
+
+    Block 11 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0507525 .. 0.14769
+        k : 1 .. 1
+
+    Block 12 cell size :
+        i : 0.0505076 .. 0.0505076
+        j : 0.0507525 .. 0.14769
+        k : 1 .. 1
+
+    Block 13 cell size :
+        i : 0.0505076 .. 0.0505076
+        j : 0.0507525 .. 0.14769
+        k : 1 .. 1
+
+    Block 14 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0507525 .. 0.14769
+        k : 1 .. 1
+
+    Block 15 cell size :
+        i : 0.0502808 .. 0.480684
+        j : 0.0507525 .. 0.14769
+        k : 1 .. 1
+
+    Block 16 cell size :
+        i : 0.147736 .. 0.0507298
+        j : 0.0505076 .. 0.0505076
+        k : 1 .. 1
+
+    Block 17 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0505076 .. 0.0505076
+        k : 1 .. 1
+
+    Block 18 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0560704 .. 0.0560704
+        k : 1 .. 1
+
+    Block 19 cell size :
+        i : 0.0502808 .. 0.480684
+        j : 0.0505076 .. 0.0505076
+        k : 1 .. 1
+
+    Block 20 cell size :
+        i : 0.0502808 .. 0.480684
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 21 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 22 cell size :
+        i : 0.0505076 .. 0.0505076
+        j : 0.05 .. 0.05
+        k : 1 .. 1
+
+    Block 23 cell size :
+        i : 0.0505076 .. 0.0505076
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 24 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 25 cell size :
+        i : 0.147736 .. 0.0507298
+        j : 0.0529289 .. 0.0529289
+        k : 1 .. 1
+
+    Block 26 cell size :
+        i : 0.147736 .. 0.0507298
+        j : 0.147736 .. 0.0507298
+        k : 1 .. 1
+
+    Block 27 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.147736 .. 0.0507298
+        k : 1 .. 1
+
+    Block 28 cell size :
+        i : 0.0505076 .. 0.0505076
+        j : 0.147736 .. 0.0507298
+        k : 1 .. 1
+
+    Block 29 cell size :
+        i : 0.0505076 .. 0.0505076
+        j : 0.147736 .. 0.0507298
+        k : 1 .. 1
+
+    Block 30 cell size :
+        i : 0.0529289 .. 0.0529289
+        j : 0.147736 .. 0.0507298
+        k : 1 .. 1
+
+    Block 31 cell size :
+        i : 0.0502808 .. 0.480684
+        j : 0.147736 .. 0.0507298
+        k : 1 .. 1
+
+No patch pairs to merge
+
+Writing polyMesh with 0 cellZones
+----------------
+Mesh Information
+----------------
+  boundingBox: (-8 -8 -0.5) (25 8 0.5)
+  nPoints: 127912
+  nCells: 63420
+  nFaces: 254216
+  nInternalFaces: 126304
+----------------
+Patches
+----------------
+  patch 0 (start: 126304 size: 284) name: down
+  patch 1 (start: 126588 size: 224) name: right
+  patch 2 (start: 126812 size: 284) name: up
+  patch 3 (start: 127096 size: 224) name: left
+  patch 4 (start: 127320 size: 56) name: cylinder
+  patch 5 (start: 127376 size: 126840) name: frontAndBack
+
+End
+

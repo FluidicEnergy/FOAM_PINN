@@ -6,7 +6,7 @@ import os
 # ----------------------------------------
 # 1. 데이터 폴더 설정
 # ----------------------------------------
-data_dir = "./0"  # patch_points.dat 파일들이 저장된 폴더
+data_dir = "extractPatchPoints/0"  # patch_points.dat 파일들이 저장된 폴더
 
 # patch_*.dat 파일들 찾기
 patch_files = sorted(glob.glob(os.path.join(data_dir, "*_points.dat")))
@@ -40,3 +40,5 @@ plt.title('Patch-wise Scattering Plot')
 plt.legend(markerscale=2, fontsize=8)
 plt.tight_layout()
 plt.savefig('bc_plot.png')
+
+
